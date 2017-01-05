@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>heyprayfor.me</title>
+  <meta name="description" content="HTML5">
+  <meta name="author" content="Spike">
+
+  <LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <script src="js/scripts.js"></script>
+  <div class="flex-container">
+    <div class="flex-header">
+      <div>
+        <p>
+          <h3>heyprayfor.me</p>
+      </div>
+      <div>
+        <a href="http://spike.bachman.in">info</a>
+      </div>
+    </div>
+    <div class="flex-composeprayer">
+      <textarea maxlength="1500">What would you like prayer for?</textarea>
+    </div>
+    <div class="flex-composeractions">
+      <div id="chars">1500</div>
+      <div class="checkboxPrivate">
+        <input type="checkbox" value="1" id="checkboxPrivateInput" name="" />
+        <label for="checkboxPrivateInput">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private</label>
+      </div>
+      <div>
+        <a class="requestPrayer" href="http://spike.bachman.in">request prayer</a>
+      </div>
+    </div>
+    <div class="flex-prayeritem">
+      <details>
+        <summary class="moreLess">This is the beginning of the prayer request text which I'd like to truncate at a certain character limit and append
+          an elipses to the end so that the viewer knows that the text continues and, hopefully, is inclined to tap/click
+          on the text to read the full request. Dolorum nihil quis et nobis quo accusantium vel. It's possible this could
+          cu . . . .</summary>
+        <p>t off at a wierd place within the sentence, but I think it's a compromise I'll just have to live with. Iste at minima
+          ducimus ipsa qui unde quia fugit. Enim nobis enim repellendus quas. Laboriosam voluptatem voluptatibus tempora
+          consequuntur accusantium voluptas saepe a. Dolorum nihil quis et nobis quo accusantium vel.Iste at minima ducimus
+          ipsa qui unde quia fugit. Enim nobis enim repellendus quas. Laboriosam voluptatem voluptatibus tempora consequuntur
+          accusantium voluptas saepe a. Dolorum nihil quis et nobis quo accusantium vel.Iste at minima ducimus ipsa qui unde
+          quia fugit. Enim nobis enim repellendus quas. Laboriosam voluptatem voluptatibus tempora consequuntur accusantium
+          voluptas saepe a. Dolorum nihil quis et nobis quo accusantium vel.Iste at minima ducimus ipsa qui unde quia fugit.
+          Enim nobis enim repellendus quas. Laboriosam voluptatem voluptatibus tempora consequuntur accusantium voluptas
+          saepe a. Dolorum nihil quis et nobis quo accusantium vel.</p>
+      </details>
+    </div>
+    <div class="flex-actionitems">
+      <div class="iPrayed">
+        <input type="checkbox" id="0000000000000001" />
+        <label for="0000000000000001"></label>
+      </div>
+    </div>
+    <div class="flex-prayeritem">Iste at minima ducimus ipsa qui unde quia fugit. Enim nobis enim repellendus quas. Laboriosam voluptatem voluptatibus
+      tempora consequuntur accusantium voluptas saepe a. Dolorum nihil quis et nobis quo accusantium vel.Iste at minima ducimus
+      ipsa qui unde quia fugit. Enim nobis enim repellendus quas. Laboriosam voluptatem voluptatibus tempora consequuntur
+      accusantium voluptas saepe a. Dolorum nihil quis et nobis quo accusantium vel.</div>
+    <div class="flex-actionitems">
+      <div class="iPrayed">
+        <input type="checkbox" id="0000000000000002" />
+        <label for="0000000000000002"></label>
+      </div>
+    </div>
+    <div class="flex-prayeritem">Iste at minima ducimus ipsa qui unde quia fugit. Enim nobis enim repellendus quas. Laboriosam voluptatem voluptatibus
+      tempora consequuntur accusantium voluptas saepe a. Dolorum nihil quis et nobis quo accusantium vel.Iste at minima ducimus
+      ipsa qui unde quia fugit. Enim nobis enim repellendus quas. Laboriosam voluptatem voluptatibus tempora consequuntur
+      accusantium voluptas saepe a. Dolorum nihil quis et nobis quo accusantium vel.</div>
+    <div class="flex-actionitems">
+      <div class="iPrayed">
+        <input type="checkbox" id="0000000000000003" />
+        <label for="0000000000000003"></label>
+      </div>
+    </div>
+    <div class="flex-footer">
+      <div class="logo">©2016</div>
+    </div>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script src="tinylimiter/jquery.tinylimiter.js"></script>
+  <script>
+    $(document).ready(function () {
+      var elem = $("#chars");
+      $("#text").limiter(1500, elem);
+    });
+  </script>
+</body>
+
+</html>

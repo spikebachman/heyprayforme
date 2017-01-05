@@ -1,0 +1,231 @@
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #006062;
+}
+
+.flex-header {
+	display: -webkit-flex;
+    display: flex;
+    width: 80%;
+    max-width: 600px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px 50px 0px;
+    }
+    
+.flex-footer {
+	display: -webkit-flex;
+    display: flex;
+    width: 80%;
+    max-width: 600px;
+    height: 50px;
+    justify-content: center;
+    background-color: red;
+    margin: 10px;
+    }
+
+.flex-composeprayer {
+	display: -webkit-flex;
+    display: flex;
+    width: 80%;
+    max-width: 600px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    }
+
+.flex-composeractions {
+	display: -webkit-flex;
+    display: flex;
+    width: 80%;
+    max-width: 600px;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px 50px 0px;
+    }
+    
+.flex-actionitems {
+	display: -webkit-flex;
+    display: flex;
+    width: 80%;
+    max-width: 600px;
+    height: 30px;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    }
+
+.flex-prayeritem {
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 5px;
+}
+
+body, textarea {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased; /* Support for all WebKit browsers. */
+  text-rendering: optimizeLegibility; /* Support for Safari and Chrome. */
+  -moz-osx-font-smoothing: grayscale; /* Support for Firefox. */
+  font-feature-settings: 'liga'; /* Support for IE. */
+}
+
+a:link {
+    color: #fff;
+    opacity: 0.3;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+a:active {
+    color: #fff;
+}
+
+a.requestPrayer:link, a.requestPrayer:visited {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #006062;
+    padding: 4px 7px;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+a.requestPrayer:hover, a.requestPrayer:active {
+    background-color: #fff;
+}
+
+headerlink {
+    font-size: 30px;
+    font-weight: 300;
+    opacity: 0.3;
+}
+
+.checkboxPrivate {
+    width: 25px;
+    position: relative;
+    opacity: 0.4;
+}
+
+.checkboxPrivate label {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    top: 0px;
+    left: 0px;
+    background: #fff;
+    border-radius: 3px;
+}
+
+.checkboxPrivate label:after {
+    opacity: 0.1;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    top: 4px;
+    left: 5px;
+    border: 2px solid #006062;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.checkboxPrivate label:hover::after {
+    opacity: 1;
+}
+
+.checkboxPrivate input[type=checkbox]:checked + label:after {
+    opacity: 1;
+}
+
+.moreLess {
+    cursor: pointer;
+}
+
+.iPrayed input[type='checkbox'] + label:before {
+    font-family: 'Material Icons';
+    content: "favorite_border";
+    color: #fff;
+    font-size: 24px;
+    -webkit-font-smoothing: antialiased; /* Support for all WebKit browsers. */
+    text-rendering: optimizeLegibility; /* Support for Safari and Chrome. */
+    -moz-osx-font-smoothing: grayscale; /* Support for Firefox. */
+    font-feature-settings: 'liga'; /* Support for IE. */
+}
+.iPrayed input[type='checkbox']:checked + label:before {
+    font-family: 'Material Icons';
+    content: "favorite";
+    color: #fff;
+    font-size: 24px;
+    -webkit-font-smoothing: antialiased; /* Support for all WebKit browsers. */
+    text-rendering: optimizeLegibility; /* Support for Safari and Chrome. */
+    -moz-osx-font-smoothing: grayscale; /* Support for Firefox. */
+    font-feature-settings: 'liga'; /* Support for IE. */
+}
+.iPrayed input[type='checkbox'] {
+    display:none;
+}
+label {
+    cursor:pointer;
+}
+
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
+textarea{
+    height:95%;
+    width: 95%;
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    background-color: transparent;
+    font-size: 15px;
+    line-height: 1.3em;
+    padding: 10px;
+}
